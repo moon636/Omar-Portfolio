@@ -26,6 +26,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+const vid1 = document.getElementById("video-1");
+const vid2 = document.getElementById("video-2");
+const vid3 = document.getElementById("video-3");
 
 const carousel = document.getElementsByClassName("carousel")[0],
 firstvideo = document.querySelectorAll(".video")[0],
@@ -39,6 +42,9 @@ const showHideIcons = () => {
 }
 arrowIcons.forEach(icon => {
     icon.addEventListener("click", () => {
+        vid1.pause();
+        vid2.pause();
+        vid3.pause();
         let firstvideoWidth = firstvideo.clientWidth + 14; // getting first video width & adding 14 margin value
         // if clicked icon is left, reduce width value from the carousel scroll left else add to it
         carousel.scrollLeft += icon.id == "left" ? -firstvideoWidth : firstvideoWidth;
@@ -73,6 +79,9 @@ const dragging = (e) => {
     positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
     carousel.scrollLeft = prevScrollLeft - positionDiff;
     showHideIcons();
+    vid1.pause();
+    vid2.pause();
+    vid3.pause();
 }
 const dragStop = () => {
     isDragStart = false;
