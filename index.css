@@ -79,6 +79,13 @@ body {
 .front-video {
   width: 80%;
   box-shadow: 0px 0px 70px 10px rgba(0, 0, 10);
+  border: 6px solid rgba(255,255,255,0.76);
+  border-radius: 3%;
+}
+
+.carousel {
+  border: 6px solid rgba(255,255,255,0.76);
+  border-radius: 3%;
 }
 
 .description-title {
@@ -181,6 +188,7 @@ body {
 .carousel video:first-child{
   margin-left: 0px;
 }
+
 
 @media screen and (max-width: 900px) {
   .carousel video{
