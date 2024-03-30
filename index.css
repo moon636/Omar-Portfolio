@@ -61,7 +61,7 @@ body {
 }
 
 .description-title {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: 500;
   animation: fadeIn 1.5s;
   transition: all 0.25s;
