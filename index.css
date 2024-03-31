@@ -34,7 +34,7 @@ body {
   /* background-repeat: repeat-x; */
   background-position: 150% 1%;
   box-shadow: inset 0px 10px 50px 30px rgba(0, 0, 15);
-  animation: fadeIn 1.5s;
+  /* animation: fadeIn 1.5s; */
 }
 
 .area-2 .background {
@@ -71,11 +71,13 @@ body {
 
 .front-text {
   text-align: center;
-  width: 90%;
+  width: 80%;
   margin: auto;
   animation: fadeIn 2s;
   transition: all 0.25s;
   padding-bottom: 5vh;
+  font-weight: 600;
+  opacity: 0.7;
 }
 
 .video-area {
@@ -88,17 +90,19 @@ body {
 
 .front-video {
   width: 80%;
-  box-shadow: 0px 0px 70px 10px rgba(0, 0, 10);
-  border: 6px solid rgba(255,255,255,0.76);
-  border-radius: 3%;
+  box-shadow: 0px 0px 80px 30px rgba(255, 255, 255,0.1);
+  border: 0px solid rgba(0,0,0,1);
+  border-radius: 3px;
+  margin-bottom: 5vh;
 }
 
 .description {
   text-align: center;
-  width: 90%;
+  width: 70%;
   margin: auto;
   animation: fadeIn 2s;
   transition: all 0.25s;
+  margin-bottom: 8vh;
 }
 
 .slider-container {
@@ -120,6 +124,7 @@ body {
   height: 450px;
   white-space: nowrap;
   overflow: hidden;
+  transition: all 0.25s;
 }
 
 .desktop-gradient-cover {
@@ -179,7 +184,7 @@ body {
 }
 
 .video {
-  border: 4px solid rgba(255,255,255,0.76);
+  border: 2px solid rgba(255,255,255,0.76);
   position: absolute;
   object-fit: cover;
   width: 31%;
@@ -187,6 +192,7 @@ body {
   top: 10%;
   transition: all 0.5s;
   z-index: 25;
+  border-radius: 6px;
 }
 
 
@@ -227,10 +233,11 @@ body {
 
 .videos-title {
     margin-top: 5vh;
+    margin-bottom: 3vh;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
-    animation: fadeIn 2.5s;
+    /* animation: fadeIn 2.5s; */
     transition: all 0.25s;
 }
 
@@ -253,6 +260,9 @@ body {
     height: 310px;
   }
 
+  .description {
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 1350px) {
@@ -298,9 +308,12 @@ body {
 /* when screen is bigger vvv */
 @media screen and (min-width: 900px) {
   .front-video {
-      width: 60%;
+      width: 50%;
   }
   
+  .front-text {
+    width: 50%;
+  }
   .carousel {
     overflow: visible;
   }
@@ -311,20 +324,50 @@ body {
 
 }
 
-.fade-in-element {
+.fade-in-element-NOTUSING {
     opacity: 0; /* Initially invisible */
     transform: translateY(20px); /* Initially shifted downward */
     transition: opacity 0.5s, transform 0.5s; /* Smooth transition */
 }
 
-.fade-in {
+.fade-in-NOTUSING {
     opacity: 1;
     transform: translateY(0);
 }
 
 
+.reviews-title {
+  margin-top: 11vh;
+  margin-bottom: 4vh;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  transition: all 0.25s;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+
+}
+
+.review-1 {
+  /* position: absolute; */
+  width: 30%;
+  left: 10%;
+  padding-bottom: 4vh;
+  border-radius: 5px;
+}
+
+.vid-review-2 {
+  width: 30%;;
+  border-radius: 5px;
+}
 .contact-container {
-  padding-top: 7vh;
+  padding-top: 10vh;
   padding-bottom: 3vh;
 }
 .contact-title {
@@ -344,6 +387,8 @@ body {
   height: 13%;
   font-size: 1rem;
   border-radius: 4px;
+  border: none;
+  transition: all 0.25s;
 }
 
 .form-message {
@@ -352,6 +397,8 @@ body {
   border-radius: 4px;
   font-size: 0.9rem;
   margin-bottom: 0.5vh;
+  border: none;
+  transition: all 0.25s;
 }
 
 .form-submit {
@@ -363,6 +410,8 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  border: none;
+  transition: all 0.25s;
 }
 
 footer {
@@ -386,9 +435,17 @@ footer {
     width: 30%;
     height: 15%
   }
+
+  .review-1 {
+    width: 65%;
+  }
+
+  .vid-review-2 {
+    width: 65%;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
 
 
   .contact-form input {
@@ -406,4 +463,17 @@ footer {
     width: 40%;
     height: 20%
   }
+
+
+  .reviews-title {
+    font-size: 1.6rem;
+  }
+  .videos-title{
+    font-size: 1.6rem;
+  }
+  .contact-title{
+    font-size: 1.6rem;
+  }
+
+
 }

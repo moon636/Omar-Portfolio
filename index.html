@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Omar - Portfolio</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="fadeslide.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,9 +47,9 @@
             visual storytelling.
           </div>
           <div class="videos">
-            <div class="videos-title">Videos</div>
+            <div class="videos-title fade-in">Videos</div>
 
-            <div class="slider-container">
+            <div class="slider-container fade-in">
               <div class="desktop-gradient-cover"></div>
               <div class="carousel" id="carousel">
                 <div class="gradient-cover"></div>
@@ -80,10 +81,24 @@
         </div>
       </div>
       <div class="area-3">
+        <div class="reviews-title fade-in">Reviews</div>
+        <div class="reviews-container">
+          <img
+            class="review-1 fade-in"
+            src="images/review-1.jpg"
+            alt="first review"
+          />
+          <video class="vid-review-2 fade-in" controls>
+            <source src="./images/vid-review-2.mp4#t=0.001" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <div class="area-4">
         <div class="contact-container">
-          <h1 class="contact-title">Contact Form</h1>
+          <h1 class="contact-title fade-in">Contact Form</h1>
           <form
-            class="contact-form"
+            class="contact-form fade-in"
             action="https://formsubmit.co/cf82467cae1c72cb5306cfda1025ec56"
             method="POST"
           >
@@ -115,4 +130,5 @@
     <footer>Copyright © 2023 Omar Shahzad. All Rights Reserved</footer>
   </body>
   <script src="index.js"></script>
+  <script src="fadeslide.js"></script>
 </html>
