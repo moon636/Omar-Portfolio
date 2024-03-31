@@ -6,6 +6,11 @@
     100% { opacity: 1; }
   }
 
+  @keyframes fadeInFrontText {
+    0% { opacity: 0; }
+    100% { opacity: 0.7; }
+  }
+
 
 *{
     margin: 0;
@@ -60,20 +65,24 @@ body {
     margin-bottom: 3vh;
 }
 
+
 .description-title {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 4rem;
+  font-weight: 1100;
   animation: fadeIn 1.5s;
   transition: all 0.25s;
   color: rgba(255,255,255,1);
   padding-bottom: 4vh;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255,0.4);
+  width: 90%;
+  margin:auto;
 }
 
 .front-text {
   text-align: center;
   width: 80%;
   margin: auto;
-  animation: fadeIn 2s;
+  animation: fadeInFrontText 2s;
   transition: all 0.25s;
   padding-bottom: 5vh;
   font-weight: 600;
@@ -447,6 +456,10 @@ footer {
 
 @media screen and (max-width: 650px) {
 
+  .description-title {
+    font-size: 3rem;
+
+  }
 
   .contact-form input {
     width: 78%;
@@ -463,7 +476,6 @@ footer {
     width: 40%;
     height: 20%
   }
-
 
   .reviews-title {
     font-size: 1.6rem;
